@@ -47,8 +47,7 @@ class Chatbox {
         this.messages.push(msg1);
 
         // fetch('http://127.0.0.1:5000/predict', {
-        fetch('http://127.0.0.1:5000/predict', {
-            // change this url to deployed app url
+        fetch('/predict', {
             method: 'POST',
             body: JSON.stringify({ message: text1 }),
             mode: 'cors',
